@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.auth.RecoverAccountFragment"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="25dp"
+        >
+
+        <TextView
+            android:id="@+id/textviewinforme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informe seu e-mail de cadastro para receber \n um link para alteração de senha"
+            android:layout_marginTop="24dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/textviewemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/white"/>
+        <EditText
+            android:id="@+id/edittextemail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Digite seu e-mail:"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttomlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:textColor="@color/color_default"
+            app:backgroundTint="@null"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_btn"/>
+
+
+        <ProgressBar
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressbarLogin"
+            android:indeterminateTint="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
